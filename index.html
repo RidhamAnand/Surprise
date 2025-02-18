@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Hitanshi, With Love</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffcdd2, #f8bbd0);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            padding: 20px 0;
+        }
+
+        h1 {
+            color: #d81b60;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #ad1457;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .love-story {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .gallery-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.1);
+        }
+
+        .memory-box {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 15px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .memory-title {
+            color: #c2185b;
+            margin-bottom: 10px;
+        }
+
+        .memory-text {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            color: #880e4f;
+        }
+
+        .heart {
+            position: absolute;
+            background: linear-gradient(135deg, #e91e63, #f06292);
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            transform: rotate(-45deg);
+            z-index: 0;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            background: inherit;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -15px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 15px;
+        }
+
+        .floating-heart {
+            animation: float 5s linear infinite;
+        }
+
+        .falling-heart {
+            animation: fall 5s linear infinite;
+        }
+
+        .side-heart {
+            animation: side 5s linear infinite;
+        }
+
+        .icecream {
+            position: absolute;
+            font-size: 24px;
+            animation: floatIcecream 5s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: rotate(-45deg) translateY(100vh);
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(-45deg) translateY(-100px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fall {
+            0% {
+                transform: rotate(-45deg) translateY(-100px);
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(-45deg) translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes side {
+            0% {
+                transform: rotate(-45deg) translateX(-100px);
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(-45deg) translateX(100vw);
+                opacity: 0;
+            }
+        }
+
+        @keyframes floatIcecream {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 600px;
+            }
+
+            .gallery-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hitanshi & Ridham</h1>
+            <h2>3 Years of Love, Laughter & Passion 👀/h2>
+        </header>
+
+        <div class="love-story">
+            <p>From the day we met at school in school bus, my world has been filled with more joy than I could have imagined. Every moment with you makes life sweeter - just like your favorite ice cream!</p>
+        </div>
+
+        <div class="gallery">
+            <img class="gallery-img" src="image1.jpeg" alt="placeholder" />
+            <img class="gallery-img" src="image2.jpeg" alt="placeholder" />
+            <img class="gallery-img" src="image3.jpeg" alt="placeholder" />
+        </div>
+
+        <div class="memory-box">
+            <h3 class="memory-title">Our First Date</h3>
+            <p class="memory-text">Remember when we got ice cream at  shop, I didnt order ice cream instead you shared with me. Your smile was brighter than the sun that day.</p>
+        </div>
+
+        <div class="memory-box">
+            <h3 class="memory-title">Three Years Together</h3>
+            <p class="memory-text">From awkward first meetings to becoming each other's best friend. Every laugh, tear, and moment in between has been worth it with you, Hitanshi.</p>
+        </div>
+
+        <div class="memory-box">
+            <h3 class="memory-title">Why I Love You</h3>
+            <p class="memory-text">Your smile, your kindness, your passion for me , you loyality , you nature, your beauty and the way you make even ordinary days extraordinary. You're the sweetest thing in my life.</p>
+        </div>
+
+        <footer>
+            <p>Made with love by Ridham 💖</p>
+            <p>For many more years to come!</p>
+        </footer>
+    </div>
+
+    <script>
+        // Create floating hearts (bottom to top)
+        function createFloatingHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart', 'floating-heart');
+            
+            // Distribute hearts across the entire width
+            heart.style.left = Math.random() * 100 + 'vw';
+            
+            // Vary animation duration for more natural movement
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            
+            // Vary opacity and size for depth effect
+            heart.style.opacity = Math.random() * 0.5 + 0.5;
+            const size = Math.random() * 20 + 10;
+            heart.style.width = heart.style.height = size + 'px';
+            
+            // Size the pseudo-elements proportionally
+            const beforeAfterSize = size;
+            const beforeAfterOffset = size / 2;
+            
+            const style = document.createElement('style');
+            const heartId = 'heart-float-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
+            heart.id = heartId;
+            
+            style.innerHTML = `
+                #${heartId}::before, #${heartId}::after {
+                    width: ${beforeAfterSize}px;
+                    height: ${beforeAfterSize}px;
+                }
+                #${heartId}::before {
+                    top: -${beforeAfterOffset}px;
+                }
+                #${heartId}::after {
+                    left: ${beforeAfterOffset}px;
+                }
+            `;
+            
+            document.head.appendChild(style);
+            document.body.appendChild(heart);
+            
+            // Remove hearts after animation to prevent memory issues
+            setTimeout(() => {
+                heart.remove();
+                style.remove();
+            }, 6000);
+        }
+        
+        // Create falling hearts (top to bottom)
+        function createFallingHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart', 'falling-heart');
+            
+            // Distribute hearts across the entire width
+            heart.style.left = Math.random() * 100 + 'vw';
+            
+            // Vary animation duration for more natural movement
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            
+            // Vary opacity and size for depth effect
+            heart.style.opacity = Math.random() * 0.5 + 0.5;
+            const size = Math.random() * 20 + 10;
+            heart.style.width = heart.style.height = size + 'px';
+            
+            // Size the pseudo-elements proportionally
+            const beforeAfterSize = size;
+            const beforeAfterOffset = size / 2;
+            
+            const style = document.createElement('style');
+            const heartId = 'heart-fall-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
+            heart.id = heartId;
+            
+            style.innerHTML = `
+                #${heartId}::before, #${heartId}::after {
+                    width: ${beforeAfterSize}px;
+                    height: ${beforeAfterSize}px;
+                }
+                #${heartId}::before {
+                    top: -${beforeAfterOffset}px;
+                }
+                #${heartId}::after {
+                    left: ${beforeAfterOffset}px;
+                }
+            `;
+            
+            document.head.appendChild(style);
+            document.body.appendChild(heart);
+            
+            // Remove hearts after animation to prevent memory issues
+            setTimeout(() => {
+                heart.remove();
+                style.remove();
+            }, 6000);
+        }
+        
+        // Create side-moving hearts (left to right)
+        function createSideHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart', 'side-heart');
+            
+            // Position hearts at random heights
+            heart.style.top = Math.random() * 100 + 'vh';
+            
+            // Vary animation duration for more natural movement
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            
+            // Vary opacity and size for depth effect
+            heart.style.opacity = Math.random() * 0.5 + 0.5;
+            const size = Math.random() * 20 + 10;
+            heart.style.width = heart.style.height = size + 'px';
+            
+            // Size the pseudo-elements proportionally
+            const beforeAfterSize = size;
+            const beforeAfterOffset = size / 2;
+            
+            const style = document.createElement('style');
+            const heartId = 'heart-side-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
+            heart.id = heartId;
+            
+            style.innerHTML = `
+                #${heartId}::before, #${heartId}::after {
+                    width: ${beforeAfterSize}px;
+                    height: ${beforeAfterSize}px;
+                }
+                #${heartId}::before {
+                    top: -${beforeAfterOffset}px;
+                }
+                #${heartId}::after {
+                    left: ${beforeAfterOffset}px;
+                }
+            `;
+            
+            document.head.appendChild(style);
+            document.body.appendChild(heart);
+            
+            // Remove hearts after animation to prevent memory issues
+            setTimeout(() => {
+                heart.remove();
+                style.remove();
+            }, 6000);
+        }
+        
+        // Create floating ice cream emojis
+        function createIceCream() {
+            const icecream = document.createElement('div');
+            icecream.classList.add('icecream');
+            icecream.innerHTML = '🍦';
+            
+            icecream.style.left = Math.random() * 100 + 'vw';
+            icecream.style.animationDuration = Math.random() * 3 + 3 + 's';
+            icecream.style.opacity = Math.random() * 0.5 + 0.5;
+            icecream.style.fontSize = Math.random() * 14 + 16 + 'px';
+            
+            document.body.appendChild(icecream);
+            
+            setTimeout(() => {
+                icecream.remove();
+            }, 8000);
+        }
+        
+        // Generate hearts and ice creams continuously
+        setInterval(createFloatingHeart, 150);  // Bottom to top hearts
+        setInterval(createFallingHeart, 200);   // Top to bottom hearts
+        setInterval(createSideHeart, 250);      // Side-moving hearts
+        setInterval(createIceCream, 800);       // Ice cream emojis
+        
+        // Add initial batch of hearts for immediate visual impact
+        for (let i = 0; i < 15; i++) {
+            setTimeout(() => {
+                createFloatingHeart();
+                createFallingHeart();
+                createSideHeart();
+            }, i * 100);
+        }
+        
+        // Display current date in relationship duration
+        const startDate = new Date(2022, 1, 18); // Approximate date 3 years ago
+        const currentDate = new Date();
+        const years = currentDate.getFullYear() - startDate.getFullYear();
+        const months = currentDate.getMonth() - startDate.getMonth();
+        const days = currentDate.getDate() - startDate.getDate();
+        
+        let duration = '';
+        if (years > 0) duration += `${years} years `;
+        if (months > 0) duration += `${months} months `;
+        if (days > 0) duration += `${days} days`;
+        
+        const h2 = document.querySelector('h2');
+        h2.textContent = `${duration} of Love, Laughter & Ice Cream`;
+    </script>
+</body>
+</html>
